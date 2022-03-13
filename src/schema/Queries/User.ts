@@ -15,7 +15,6 @@ export const GET_USER = {
         id: { type: GraphQLID }
     },
     async resolve(_: any, args: any) {
-        
         return await Users.findOne(args.id);
     }
 }
